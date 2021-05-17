@@ -4,14 +4,11 @@ import MoviesSection from './MoviesSection';
 import BooksSection from './BooksSection';
 
 
-export default function MediaSection() {
+export default function MediaSection({media}) {
     return (
 
         <div>
-            I'm the media section
-            <MusicSection/>
-            <MoviesSection/>
-            <BooksSection/>
+            <MusicSection media={media}/>
         </div>
     )
 }

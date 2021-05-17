@@ -1,11 +1,15 @@
 import React from 'react';
 import Song from './Song';
 
-export default function MusicSection() {
+export default function MusicSection({media}) {
+
+
+
+
     return (
         <div>
-            I'm the music section
-            <Song />
+            <h3>Results:</h3>
+            <Song media={media} />
         </div>
     )
 }

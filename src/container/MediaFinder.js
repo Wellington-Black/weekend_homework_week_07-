@@ -4,10 +4,17 @@ import SearchBar from '../components/SearchBar';
 
 
 export default function MediaFinder() {
+
+    const [media, setMedia] = useState([])
+
+   
+
     return (
         <div>
-            <SearchBar />
-            <MediaSection />
+            <h1>🎧 Music Finder 🎧</h1>
+            <SearchBar setMedia = {setMedia}/>
+            <MediaSection media = {media}/>
+           
         </div>
     )
 }
